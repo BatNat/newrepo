@@ -12,8 +12,8 @@ const styles = theme => ({
     top: 0,
     left: 20,
     maxWidth: "30%",
-    padding: theme.spacing(3, 2),
-    margin: theme.spacing(3, 2),
+    padding: theme.spacing(4, 2),
+    margin: theme.spacing(4, 2),
   }
 });
 
@@ -40,7 +40,7 @@ class SearchBox extends Component {
     if (!profileUpdated) {
       return (
         <Paper className={this.props.classes.paper}>
-          <Grid container spacing={24}>
+          <Grid container spacing={2}>
             <Grid item xs={12}>
               <Typography component="h1" variant="h4" align="left">
                 Заполните платежные данные
@@ -68,7 +68,7 @@ class SearchBox extends Component {
     if (orderMade) {
       return (
         <Paper className={this.props.classes.paper}>
-          <Grid container spacing={10}>
+          <Grid container spacing={1}>
             <Grid item xs={12}>
               <Typography component="h1" variant="h4" align="left">
                 Заказ размещён
